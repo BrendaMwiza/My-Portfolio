@@ -1,9 +1,7 @@
 body {
-  margin: 10px;
-  padding: 10px;
-  border: 10px;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoOKYUeNePf5lPCZbYITmRY7_WQYOSNuj5CJc9yIrcbRGacPI_");
+  background-image: url("static/images/back3.jpeg");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 ul {
@@ -19,14 +17,14 @@ ul {
   
   li a {
     display: block;
-    color: black;
+    color: rgb(250, 244, 244);
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    color: #933;
+    color: rgb(226, 222, 222);
   }
   .nav {
     float: right;
@@ -34,14 +32,9 @@ ul {
   }
   
   .active {
-    background-color:  #933;
+    background-color:  rgb(175, 225, 245);
   }  
-  .photo {
-      height: 800px;
-      width: 100%;
-      border-radius:60px;
-  }
-
+  
   .header {
       text-align: center;
       font-size: 50px;
@@ -54,23 +47,13 @@ ul {
 
   }
  
-  .bar {
-      float: left;
-      font-size: 30px;
-      
-  }
 
-  #heading {
-    font-size: 100px;
-    color: bisque;
-  }
   #head {
     font-size: 100px;
-    color: bisque;
+    
   }
   h2 {
-    color: bisque;
-    font-size: 50px;
+    font-size: 30px;
   }
   h3 {
     font-size: 30px;
@@ -78,12 +61,10 @@ ul {
   h4 {
     font-size: 20px;
   }
-  .about {
-    color: beige;
-    letter-spacing: 1px;
-    font-style: oblique;
-  }
   p {
     font-size: 20px;
     color: beige;
+  }
+  .img-responsive {
+    border-radius: 30px;
   }

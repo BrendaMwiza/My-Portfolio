@@ -6,25 +6,128 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script>
+            window.onload = function () {
+            
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light4", 
+                title:{
+                    text: "Skills acquired"             
+                },
+                axisY:{
+                    interval: 10,
+                    suffix: "%"
+                },
+                toolTip:{
+                    shared: true
+                },
+                data:[{
+                    type: 'bar',
+                    stacked: true,
+                    
+                    dataPoints: [
+                        { y: 95, label: "HTML & CSS" },
+                        { y: 80, label: "Javascript" },
+                        { y: 88, label: "Angular" },
+                        { y: 97, label: "Python Flask" },
+                        { y: 97, label: "Python Django" },
+                    ]
+                    
+                }]
+            });
+            chart.render();
+            
+            }
+        </script>
     </head>
     <body>
         <div class="nav">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#skills">Professional</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                
             </ul>
         </div>
-       
-        <h1 class="header"><em>I'm Brenda MWIZA </em></h1>
+       <br><br><br><br>
+        <div class="every" style="background-color:rgba(95, 93, 93,0.2)">
 
-        <img class="photo" src="images/IMG-20190622-WA0020.jpg">
+            <!-- <img class="img-responsive rounded-circle" src="static/images/image6.jpeg" style="margin-left: 500px;"> -->
+            <h1 class="header"> I'm<br> Brenda<br> MWIZA.</h1>
+            <p style="text-align: right;margin-left: 60%;margin-right: 2%;font-family: 'Bitter', serif;">I’m a full-stack developer and UI designer with great 
+                passion for coding and building plain interfaces. Plus, I’m an easy-going person,fit in any team and I can work 
+                remotely. My objective is to strengthen my career and implement
+                the concepts learnt and ideas developed since my child hood in order to render life easier, tastier and
+                above all meaningful. </p>
 
-        <div class="about">
-            <p>My name is mentioned above, I'm married to one Husband and a mother to three kids, my family is my first priority and I love them so much.</p>
+        </div>
+        <div id="skills" style="background-color: white;">
+            <br><br><br><br><br>
+            <div id="chartContainer" style="height: 300px; width: 70%;margin-left: 200px;font-family: cursive;font-size: 50px;"></div>
+            <br><br><br>
+            
+            <br><br>
         </div>
 
-        <footer class="foot"><strong>copyright@Brenda</strong></footer>
+        <div id="projects"  style="background-color: rgb(107, 105, 105);background-size: cover;background-attachment: fixed;" >
+            <br><br><br><br>
+            <div class="row" class="container">
+                <div class="col-md-6" style="padding-left: 250px">
+                    <a href="https://brendamwiza.github.io/coffee-project/"><img src="static/images/coffee.jpeg" class="img-thumbnail" width="350px"></a>
+                    
+                    
+                </div>
+                
+                <div class="col-md-6">
+                        <br><br><br><br>
+                    <h2 style="font-family: 'Bitter', serif;color: rgb(248, 245, 250)">coffee-project</h2>
+                    <p style="font-family: 'Bitter', serif;color: rgb(249, 247, 251);">In this Project I made a coffee shop web page styled using HTML and CSS.</p>
+                    <p style="font-family: 'Bitter', serif;color: rgb(249, 247, 251);">here is the link <a href="https://brendamwiza.github.io/coffee-project/"><span style="color: rgb(115, 183, 185)">https://brendamwiza.github.io/coffee-project/</span></a></p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row" class="container">
+                <div class="col-md-6" style="padding-left: 250px">
+                    <a href="https://instapicscom.herokuapp.com/"><img src="static/images/instagram.jpeg" class="img-thumbnail" width="350px"></a>
+                    
+                    
+                </div>
+                
+                <div class="col-md-6">
+                        <br><br><br><br>
+                    <h2 style="font-family: 'Bitter', serif;color: rgb(248, 245, 250)">coffee-project</h2>
+                    <p style="font-family: 'Bitter', serif;color: rgb(249, 247, 251);">In this Project I made a web application looking like a clone of Instagram</p>
+                    <p style="font-family: 'Bitter', serif;color: rgb(249, 247, 251);">here is the link <a href="https://instapicscom.herokuapp.com/"><span style="color: rgb(115, 183, 185)">https://instapicscom.herokuapp.com/</span></a></p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row" class="container">
+                <div class="col-md-6" style="padding-left: 250px">
+                    <a href="https://gallerysha.herokuapp.com/"><img src="static/images/gallery.jpeg" class="img-thumbnail" width="350px"></a>
+                    
+                    
+                </div>
+                
+                <div class="col-md-6">
+                        <br><br><br><br>
+                    <h2 style="font-family: 'Bitter', serif;color: rgb(248, 245, 250)">coffee-project</h2>
+                    <p style="font-family: 'Bitter', serif;color: rgb(249, 247, 251);">In this Project I made a website that allows users to view photos of my gallery.</p>
+                    <p style="font-family: 'Bitter', serif;color: rgb(249, 247, 251);">here is the link <a href="https://gallerysha.herokuapp.com/"><span style="color: rgb(115, 183, 185)">https://gallerysha.herokuapp.com/</span></a></p>
+                </div>
+            </div>
+    
+        </div>
         
+
+        <footer class="foot"><strong>copyright@Brenda</strong></footer>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </body>
 </html>
