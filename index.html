@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -48,6 +49,143 @@
             
             }
         </script>
+
+        <style>
+        
+            footer {
+                /* background: rgb(226, 226, 226) url('https://res.cloudinary.com/drrezzrvd/image/upload/v1573770480/aaron-burden-6jYoil2GhVk-unsplash_nmtfax.jpg(592 kB)
+            https://res.cloudinary.com/drrezzrvd/image/upload/v1573770480/aaron-burden-6jYoil2GhVk-unsplash_nmtfax.jpg
+            ') no-repeat center center fixed; */
+                background: rgb(70, 69, 69);
+                text-align: center;
+                color: #ddd;
+                padding:50px 0 50px;
+                height: 800px;
+            }
+            footer a {
+                color: #ddd;
+            }
+            footer a:hover {
+                color: rgb(255, 255, 255);
+            }
+            footer ul.social-networks {
+                list-style:none;
+            }
+            footer ul.social-networks li {
+                display:inline;
+            }
+            footer ul.social-networks li i {
+                display:inline-block;
+            }
+            footer ul.social-networks li a {
+                color: rgb(172, 170, 170);
+                margin: 0 5px;
+            }
+            footer ul.social-networks li a:hover {
+                text-decoration:none;
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                -ms-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+            }
+            
+            .hovereffect {
+                width: 100%;
+                height: 100%;
+                float: left;
+                overflow: hidden;
+                position: relative;
+                text-align: center;
+                cursor: default;
+                background: #5b6b63;
+            }
+
+            .hovereffect .overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                padding: 50px 20px;
+            }
+
+            .hovereffect img {
+                display: block;
+                position: relative;
+                max-width: none;
+                width: calc(100% + 20px);
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(-10px,0,0);
+                transform: translate3d(-10px,0,0);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+
+            .hovereffect:hover img {
+                opacity: 0.4;
+                filter: alpha(opacity=40);
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+            .hovereffect h2 {
+                text-transform: uppercase;
+                color: #fff;
+                text-align: center;
+                position: relative;
+                font-size: 17px;
+                overflow: hidden;
+                padding: 0.5em 0;
+                background-color: transparent;
+            }
+
+            .hovereffect h2:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: #fff;
+                content: '';
+                -webkit-transition: -webkit-transform 0.35s;
+                transition: transform 0.35s;
+                -webkit-transform: translate3d(-100%,0,0);
+                transform: translate3d(-100%,0,0);
+            }
+
+            .hovereffect:hover h2:after {
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+
+            .hovereffect a, .hovereffect p {
+                color: #FFF;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+                transition: opacity 0.35s, transform 0.35s;
+                -webkit-transform: translate3d(100%,0,0);
+                transform: translate3d(100%,0,0);
+            }
+
+            .hovereffect:hover a, .hovereffect:hover p {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+            #rows{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-top: 2%;
+                justify-content: space-between;
+            }
+            
+        </style>
     </head>
     <body>
         <div class="nav">
@@ -79,72 +217,156 @@
 
         <div id="projects"  style="background-size: cover;background-attachment: fixed;" >
             <br><br><br><br>
-            <div class="row" class="container">
-                <div class="col-md-6" style="padding-left: 250px">
-                    <a href="https://brendamwiza.github.io/coffee-project/"><img src="static/images/coffee.jpeg" class="img-thumbnail" width="350px"></a>
-                    
-                    
-                </div>
-                
-                <div class="col-md-6">
-                        <br><br><br><br>
-                    <h2 style="font-family: 'Bitter', serif;color: rgb(8, 8, 8)">coffee-project</h2>
-                    <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">In this Project I made a coffee shop web page styled using HTML and CSS.</p>
-                    <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">here is the link <a href="https://brendamwiza.github.io/coffee-project/"><span style="color: rgb(115, 183, 185)">https://brendamwiza.github.io/coffee-project/</span></a></p>
-                </div>
-            </div>
-            <br><br>
-            <div class="row" class="container">
-                <div class="col-md-6" style="padding-left: 250px">
-                    <a href="https://instapicscom.herokuapp.com/"><img src="static/images/instagram.jpeg" class="img-thumbnail" width="350px"></a>
-                    
-                    
-                </div>
-                
-                <div class="col-md-6">
-                        <br><br><br><br>
-                    <h2 style="font-family: 'Bitter', serif;color: rgb(8, 8, 8)">Instagram-project</h2>
-                    <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">In this Project I made a web application looking like a clone of Instagram</p>
-                    <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">here is the link <a href="https://instapicscom.herokuapp.com/"><span style="color: rgb(115, 183, 185)">https://instapicscom.herokuapp.com/</span></a></p>
-                </div>
-            </div>
-            <br><br>
-            <div class="row" class="container">
-                <div class="col-md-6" style="padding-left: 250px">
-                    <a href="https://gallerysha.herokuapp.com/"><img src="static/images/gallery.jpeg" class="img-thumbnail" width="350px"></a>
-                    
-                    
-                </div>
-                
-                <div class="col-md-6">
-                        <br><br><br><br>
-                    <h2 style="font-family: 'Bitter', serif;color: rgb(8, 8, 8)">gallery-project</h2>
-                    <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">In this Project I made a website that allows users to view photos of my gallery.</p>
-                    <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">here is the link <a href="https://gallerysha.herokuapp.com/"><span style="color: rgb(115, 183, 185)">https://gallerysha.herokuapp.com/</span></a></p>
-                </div>
-            </div>
+            <h4 style="color: rgb(11, 12, 11);font-family: 'Bitter', serif;text-align: center;font-size: 60px;"><b>My Projects</b></h4>
+            <div id="rows">
+
+            
+            <div class="row" >
     
-        </div>
-    
-        <footer>
-            <div class="container" style="margin-left:27%;">
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <ul class="social-networks" style="list-style: none;display: inline-block;">
-                            <li ><a href="#" style="color:#5E5E5E;margin: 0 5px;  "><i class="icon-circled icon-bgdark fa fa-instagram icon-2x"></i></a></li>
-                            <li><a href="#" style="color:#5E5E5E;margin: 0 5px; "><i class="icon-circled icon-bgdark fa fa-twitter icon-2x"></i></a></li>
-                            <li><a href="#" style="color:#5E5E5E;margin: 0 5px; "><i class="icon-circled icon-bgdark fa fa-dribbble icon-2x"></i></a></li>
-                            <li><a href="#" style="color:#5E5E5E;margin: 0 5px; "><i class="icon-circled icon-bgdark fa fa-pinterest icon-2x"></i></a></li>
-                        </ul>
-                        <p class="copyright">
-                            &copy;<strong style="color: black;">copyright@Brenda.</strong>
-                            
-                        </p>
+                <div class=" col-md-4">
+                  <div class="hovereffect" style="width:430px;height:300px;">
+                    <a href="https://brendamwiza.github.io/coffee-project/"><img src="static/images/coffee.jpeg" class="img-thumbnail"></a>
+            
+                    <div class="overlay">
+                      <h2 style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">coffee-project</h2>
+                      <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">In this Project I made a coffee shop web page styled using HTML and CSS.</p>
+                      <p style="font-family: 'Bitter', serif;color: rgb(8, 8, 8);">here is the link <a href="https://brendamwiza.github.io/coffee-project/"><span style="color: rgb(1, 36, 37)">https://brendamwiza.github.io/coffee-project/</span></a></p>
+             
                     </div>
+                  </div>
                 </div>
+                
+              </div>
+            <br><br>
+            <div class="row">
+    
+                <div class=" col-md-4 ">
+                  <div class="hovereffect" style="width:430px;height:300px;">
+                    <a href="https://instapicscom.herokuapp.com/"><img src="static/images/instagram.jpeg" class="img-thumbnail"></a>
+            
+                    <div class="overlay">
+                      <h2>Instagram-project</h2>
+                      <p style="font-family: 'Bitter', serif;">In this Project I made a web application looking like a clone of Instagram.</p>
+                  	<p style="font-family: 'Bitter', serif;">here is the link <a href="https://instapicscom.herokuapp.com/"><span style="color: rgb(1, 36, 37)">https://instapicscom.herokuapp.com/</span></a></p>
+
+             
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            <br><br>
+            <div class="row" >
+    
+                <div class="col-md-4" >
+                  <div class="hovereffect" style="width:430px;height:300px;">
+                    <a href="https://gallerysha.herokuapp.com/"><img src="static/images/gallery.jpeg" class="img-thumbnail"></a>
+            
+                    <div class="overlay">
+                      <h2>gallery-project</h2>
+                      <p style="font-family: 'Bitter', serif;">In this Project I made a website that allows users to view photos of my gallery.</p>
+                    <p style="font-family: 'Bitter', serif;">here is the link <a href="https://gallerysha.herokuapp.com/"><span style="color: rgb(1, 36, 37)">https://gallerysha.herokuapp.com/</span></a></p>
+
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
             </div>
-            <!-- ./container -->
-        </footer>
+        </div>
+        <br><br><br>
+        <footer>
+	
+            <h4 style="color: honeydew;font-family: 'Bitter', serif;"><b>Get in touch</b></h4>
+            <br><br>
+			<div class="site-section" data-aos="fade">
+				<div class="container-fluid">
+					
+						<div class="row">
+							
+							<div class="col-md-6">
+								<form action="#" style="width: 80%;margin-left: 60px;font-family: 'Bitter', serif;">
+								
+				
+								<div class="row form-group">
+									<div class="col-md-6 mb-3 mb-md-0">
+									<label class="text-black" for="fname" style="margin-right: 55%;">First Name</label>
+									<input type="text" id="fname" class="form-control">
+									</div>
+									<div class="col-md-6">
+									<label class="text-black" for="lname" style="margin-right: 55%;">Last Name</label>
+									<input type="text" id="lname" class="form-control">
+									</div>
+								</div>
+				
+								<div class="row form-group">
+									
+									<div class="col-md-12">
+									<label class="text-black" for="email" style="margin-right: 90%;">Email</label> 
+									<input type="email" id="email" class="form-control">
+									</div>
+								</div>
+				
+								<div class="row form-group">
+									
+									<div class="col-md-12">
+									<label class="text-black" for="subject" style="margin-right: 90%;">Subject</label> 
+									<input type="subject" id="subject" class="form-control">
+									</div>
+								</div>
+				
+								<div class="row form-group">
+									<div class="col-md-12">
+									<label class="text-black" for="message" style="margin-right: 90%;">Message</label> 
+									<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+									</div>
+								</div>
+				
+								<div class="row form-group">
+									<div class="col-md-12">
+									<input type="submit" value="Send Message" class="btn btn-dark py-2 px-4 text-white">
+									</div>
+								</div>
+				
+					
+								</form>
+							</div>
+							<div class="col-md-6 ml-auto" style="margin-left: 60px;font-family: 'Bitter', serif;">
+								<div class="mb-3">
+								<p class="mb-0 font-weight-bold"><i class="fa fa-address-book" aria-hidden="true"></i> Address</p>
+								<p class="mb-4">246 KK St. kagina, kicukiro, Kigali, Rwanda</p>
+				
+								<p class="mb-0 font-weight-bold"><i class="fa fa-phone-square" aria-hidden="true"></i> Phone</p>
+								<p class="mb-4"><a href="#">+250 784 129 592</a></p>
+				
+								<p class="mb-0 font-weight-bold"><i class="fa fa-envelope" aria-hidden="true"></i> Email Address</p>
+								<p class="mb-0"><a href="#">brendabrizy@gmail.com</a></p>
+				
+								</div>
+								<br><br><br>
+								<div class="container">
+									<h4 style="color: honeydew;"><b>Be friends with me</b></h4>
+									<div class="row">
+										
+										<div class="col-md-6 " style="margin-left:28%;display:inline-block;">
+											<ul class="social-networks">
+												<li><a href="https://www.instagram.com/brendamwiza/"><i class="icon-circled fab fa-instagram "></i></a></li>
+												<li><a href="https://twitter.com/home"><i class="icon-circled fab fa-twitter "></i></a></li>
+												<li><a href="#"><i class="icon-circled fab fa-facebook "></i></a></li>
+												<li><a href="https://www.linkedin.com/in/brenda-mwiza-014743135/"><i class="icon-circled fab fa-linkedin-in "></i></a></li>
+											</ul>
+											<p class="copyright">
+												copyright &copy;2019. All rights reserved.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+				</div>
+			</div>
+	</footer>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </body>
 </html>
